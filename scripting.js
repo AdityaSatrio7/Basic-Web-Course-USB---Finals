@@ -7,7 +7,7 @@ $(document).ready(function() {
     });
 
     $(document).click(function(event) {
-        if (!$(event.target).closest("#login-form,.login-button").length) {
+        if (!$(event.target).closest(".form,.login-button").length) {
             $("#login-form").fadeOut();
         }
         if (!$(event.target).closest("#register-overlay,.register-button").length) {

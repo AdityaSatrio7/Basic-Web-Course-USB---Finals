@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 03, 2025 at 02:30 PM
+-- Generation Time: Feb 03, 2025 at 02:42 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -30,14 +30,14 @@ SET time_zone = "+00:00";
 CREATE TABLE `credentials` (
   `ID` int(11) NOT NULL,
   `Username` varchar(255) NOT NULL,
-  `Password` varchar(255) NOT NULL
+  `Password_verif` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `credentials`
 --
 
-INSERT INTO `credentials` (`ID`, `Username`, `Password`) VALUES
+INSERT INTO `credentials` (`ID`, `Username`, `Password_verif`) VALUES
 (1, 'Adit', '121212'),
 (2, 'Harits', '131313');
 
