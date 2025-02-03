@@ -24,6 +24,18 @@ if(!isset($_SESSION["login"])){
     <script type="text/javascript" src="./scripting.js"></script>
 </head>
 <body>
-    <h1>Donasi page Test</h1>
+<section class="header">
+        <nav>
+            <a href="index.php"><img src="Media/logo.png" style="width: 250px; height: auto;"></a>
+            <span style="margin-left: 30px; font-size: 50px; font-weight: bold; color: blue">Bisa Donasi</span>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="profile.php">Profil</a></li>
+                    <li><a href="logout.php">Logout</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </section>
 </body>
 </html>
