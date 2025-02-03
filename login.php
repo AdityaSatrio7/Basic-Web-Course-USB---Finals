@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     //SQL statement untuk fetch password dari database
-    $stmt = $conn->prepare("SELECT Password_hash FROM Credentials WHERE Username = ?");
+    $stmt = $conn->prepare("SELECT Password_verif FROM Credentials WHERE Username = ?");
     $stmt->bind_param("s", $username);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result->num_rows > 0) {
         $user = $result->fetch_assoc();
         //verifikasi password
-        if (password_verify($password, $user["Password_hash"])) {
+        if (password_verify($password, $user["Password_verif"])) {
             //set session
             $_SESSION["login"] = true;
             //set response
