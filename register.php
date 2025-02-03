@@ -17,8 +17,8 @@
             <span style="margin-left: 30px; font-size: 50px; font-weight: bold; color: blue">Bisa Donasi</span>
         </nav>
     </section>
-<div class="register-form" id="login-form">
-    <form class="form" method="POST" action="register.php">
+<div class="register-form" id="register-form">
+    <form class="form" method="POST" action="register_func.php">
        <p class="form-title">Register Form</p>
         <div class="input-container">
           <input placeholder="Masukan username" type="text" id="username">
